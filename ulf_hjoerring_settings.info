@@ -1,0 +1,4 @@
+name = Ulf Hjørring settings
+description = Holds settings specific to Ulf i Hjørring
+package = Ulf base
+core = 7.x
