@@ -1,9 +1,0 @@
-<?php
-
-/**
- * Set up configurations specific to Hjørring
- */
-function ulf_hjoerring_settings_install() {
-
-}
-
