@@ -88,15 +88,18 @@ function ulf_hjoerring_settings_user_presave(&$edit, $account, $category)
  */
 function ulf_hjoerring_settings_form_alter(&$form, &$form_state, $form_id)
 {
-  if($form_id == 'internship_node_form') {
-//    kint($form['author']['#attached']);
+  if($form_id == 'internship_node_form' || $form_id == 'education_node_form') {
+//    kint($form_id);
 //    kint($form);die;
+    $node = $form_state['node'];
     $form['company'] = $form['author'];
     unset($form['company']['date']);
     unset($form['author']['name']);
     $form['author']['#attributes']['class'] = [];
     $form['author']['#title'] = 'Oprettelsesdato';
-    $form['company']['name']['#default_value'] = '';
+    if(!isset($node->nid) || isset($node->is_new)) {
+      $form['company']['name']['#default_value'] = '';
+    }
     $form['company']['name']['#description'] = '';
     $form['company']['name']['#required'] = true;
     $form['company']['name']['#title'] = 'Udbyder';
