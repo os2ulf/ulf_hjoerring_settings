@@ -872,7 +872,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'html5_tools_iso8601',
+          'format_type' => 'ulf_default',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
@@ -886,7 +886,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'html5_tools_iso8601',
+          'format_type' => 'ulf_default',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
@@ -1140,7 +1140,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'html5_tools_iso8601',
+          'format_type' => 'ulf_default',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
@@ -1154,7 +1154,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'html5_tools_iso8601',
+          'format_type' => 'ulf_default',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
@@ -1168,7 +1168,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'html5_tools_iso8601',
+          'format_type' => 'ulf_default',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
@@ -2053,50 +2053,6 @@ At opnå kendskab til...
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 14,
-    ),
-  );
-
-  // Exported field_instance: 'node-education-field_target_group'.
-  $field_instances['node-education-field_target_group'] = array(
-    'bundle' => 'education',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 38,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 26,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 1,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_target_group',
-    'label' => 'Overordnet målgruppe',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 2,
     ),
   );
 
@@ -3111,7 +3067,7 @@ At opnå kendskab til...
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'html5_tools_iso8601',
+          'format_type' => 'ulf_default',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
@@ -3125,7 +3081,7 @@ At opnå kendskab til...
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'html5_tools_iso8601',
+          'format_type' => 'ulf_default',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
@@ -4028,50 +3984,6 @@ At opnå kendskab til...
     ),
   );
 
-  // Exported field_instance: 'node-internship-field_target_group'.
-  $field_instances['node-internship-field_target_group'] = array(
-    'bundle' => 'internship',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 38,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 26,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 1,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_target_group',
-    'label' => 'Overordnet målgruppe',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 2,
-    ),
-  );
-
   // Exported field_instance: 'node-internship-field_trashed'.
   $field_instances['node-internship-field_trashed'] = array(
     'bundle' => 'internship',
@@ -4225,7 +4137,6 @@ At opnå kendskab til...
   t('Læreplanstemaer');
   t('Message form');
   t('Målgruppe');
-  t('Overordnet målgruppe');
   t('Passed review');
   t('Periode');
   t('Pris');

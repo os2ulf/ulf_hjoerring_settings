@@ -6,3 +6,105 @@
  */
 
 include_once 'ulf_hjoerring_settings.features.inc';
+
+
+/**
+ * Add new role.
+ *
+ * @return array
+ *   An array defining a role
+ */
+function ulf_hjoerring_settings_secure_permissions_roles() {
+  return array(
+    'company consultant',
+    'company',
+  );
+}
+
+/**
+ * Implements hook_secure_permissions().
+ */
+function ulf_hjoerring_settings_secure_permissions($role) {
+  $permissions = [];
+  if($role == 'company consultant') {
+    // by default company consultants have the same permissions as editors, with a few alterations
+    $permissions = secure_permissions_data_secure_permissions('editor');
+
+    $permissions[] = 'assign company consultant role';
+    $permissions[] = 'assign company role';
+    $permissions[] = 'create news_course_provider content';
+    $permissions[] = 'create internship content';
+    $permissions[] = 'edit any internship content';
+    $permissions[] = 'edit own internship content';
+    $permissions[] = 'create education content';
+    $permissions[] = 'edit any education content';
+    $permissions[] = 'edit own education content';
+
+    $remove = [
+      'assign editor role',
+      'assign course provider role',
+      'create course content',
+      'edit any course content',
+      'edit own course content',
+      'create course_educators content',
+      'edit any course_educators content',
+      'edit own course_educators content',
+    ];
+
+    foreach ($remove as $permission) {
+      if (($key = array_search($permission, $permissions)) !== false) {
+        unset($permissions[$key]);
+      }
+    }
+
+  }
+  if($role == 'company') {
+    // companies should never actually log in, so their permissions doesn't matter
+    $permissions = [];
+  }
+
+  //todo: should be deleted
+  $permissions[] = 'access kint devel information';
+  $permissions[] = 'administer kint settings';
+
+  return $permissions;
+}
+
+/**
+ * Implements hook_user_presave().
+ */
+function ulf_hjoerring_settings_user_presave(&$edit, $account, $category)
+{
+  if($edit['status'] == 1) {
+    $role = user_role_load_by_name('company');
+    if(isset($edit['roles'][$role->rid]) && $edit['roles'][$role->rid] != 0) {
+      $edit['status'] = 0;
+    }
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function ulf_hjoerring_settings_form_alter(&$form, &$form_state, $form_id)
+{
+  if($form_id == 'internship_node_form') {
+//    kint($form['author']['#attached']);
+//    kint($form);die;
+    $form['company'] = $form['author'];
+    unset($form['company']['date']);
+    unset($form['author']['name']);
+    $form['author']['#attributes']['class'] = [];
+    $form['author']['#title'] = 'Oprettelsesdato';
+    $form['company']['name']['#default_value'] = '';
+    $form['company']['name']['#description'] = '';
+    $form['company']['name']['#required'] = true;
+    $form['company']['name']['#title'] = 'Udbyder';
+    $form['company']['#attributes']['class'] = [];
+    $form['company']['#weight'] = -49;
+    $form['company']['#group'] = null;
+    $form['company']['#collapsed'] = false;
+    $form['company']['#title'] = 'Udbyder';
+//    kint($form);die;
+  }
+}

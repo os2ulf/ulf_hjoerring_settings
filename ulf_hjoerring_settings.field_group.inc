@@ -148,8 +148,7 @@ function ulf_hjoerring_settings_field_group_info() {
     'children' => array(
       0 => 'field_full_description',
       1 => 'field_purpose',
-      2 => 'field_target_group',
-      3 => 'title',
+      2 => 'title',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -182,10 +181,9 @@ function ulf_hjoerring_settings_field_group_info() {
     'label' => 'Forløbet',
     'weight' => '0',
     'children' => array(
-      0 => 'field_target_group',
-      1 => 'field_full_description',
-      2 => 'field_purpose',
-      3 => 'title',
+      0 => 'field_full_description',
+      1 => 'field_purpose',
+      2 => 'title',
     ),
     'format_type' => 'div',
     'format_settings' => array(
