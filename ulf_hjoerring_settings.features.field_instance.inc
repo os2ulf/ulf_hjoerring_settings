@@ -23,7 +23,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 10,
+        'weight' => 8,
       ),
       'full' => array(
         'label' => 'above',
@@ -74,7 +74,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 11,
+        'weight' => 9,
       ),
       'full' => array(
         'label' => 'above',
@@ -127,7 +127,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 6,
+        'weight' => 4,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -136,7 +136,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 16,
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -161,6 +161,50 @@ function ulf_hjoerring_settings_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-education-field_competencies'.
+  $field_instances['node-education-field_competencies'] = array(
+    'bundle' => 'education',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 20,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 17,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_competencies',
+    'label' => 'Kompetenceområder',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 12,
+    ),
+  );
+
   // Exported field_instance: 'node-education-field_count'.
   $field_instances['node-education-field_count'] = array(
     'bundle' => 'education',
@@ -178,7 +222,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 4,
+        'weight' => 2,
       ),
       'full' => array(
         'label' => 'above',
@@ -190,7 +234,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 11,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -231,14 +275,14 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 3,
       ),
       'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -287,7 +331,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
           'thousand_separator' => ' ',
         ),
         'type' => 'number_decimal',
-        'weight' => 26,
+        'weight' => 24,
       ),
       'full' => array(
         'label' => 'above',
@@ -299,7 +343,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
           'thousand_separator' => ' ',
         ),
         'type' => 'number_decimal',
-        'weight' => 27,
+        'weight' => 24,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -340,14 +384,14 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 28,
+        'weight' => 26,
       ),
       'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 28,
+        'weight' => 25,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -391,14 +435,14 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 15,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -437,14 +481,14 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 24,
+        'weight' => 22,
       ),
       'full' => array(
         'label' => 'above',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 20,
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -465,7 +509,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 12,
+      'weight' => 10,
     ),
   );
 
@@ -483,7 +527,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 16,
+        'weight' => 14,
       ),
       'full' => array(
         'label' => 'above',
@@ -513,7 +557,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 39,
+      'weight' => 50,
     ),
   );
 
@@ -529,14 +573,14 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 14,
+        'weight' => 12,
       ),
       'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 21,
+        'weight' => 19,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -573,14 +617,14 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 15,
+        'weight' => 13,
       ),
       'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 22,
+        'weight' => 20,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -627,14 +671,14 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 36,
+        'weight' => 34,
       ),
       'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 30,
+        'weight' => 27,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -674,7 +718,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 6,
       ),
       'full' => array(
         'label' => 'above',
@@ -729,7 +773,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 7,
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'above',
@@ -828,7 +872,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 17,
+        'weight' => 15,
       ),
       'full' => array(
         'label' => 'above',
@@ -858,7 +902,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 40,
+      'weight' => 51,
     ),
   );
 
@@ -880,7 +924,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
           'show_remaining_days' => 0,
         ),
         'type' => 'date_default',
-        'weight' => 30,
+        'weight' => 28,
       ),
       'full' => array(
         'label' => 'above',
@@ -894,7 +938,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
           'show_remaining_days' => 0,
         ),
         'type' => 'date_default',
-        'weight' => 34,
+        'weight' => 31,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -927,7 +971,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 23,
+      'weight' => 50,
     ),
   );
 
@@ -942,13 +986,13 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 39,
+        'weight' => 36,
       ),
       'full' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 39,
+        'weight' => 36,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -985,7 +1029,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 13,
+        'weight' => 11,
       ),
       'full' => array(
         'label' => 'above',
@@ -1044,7 +1088,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
           'view_mode' => 'default',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 29,
+        'weight' => 27,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -1055,7 +1099,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
           'view_mode' => 'default',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 31,
+        'weight' => 28,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1097,13 +1141,13 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 45,
+        'weight' => 41,
       ),
       'full' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 45,
+        'weight' => 41,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1148,7 +1192,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
           'show_remaining_days' => 0,
         ),
         'type' => 'date_default',
-        'weight' => 18,
+        'weight' => 16,
       ),
       'full' => array(
         'label' => 'above',
@@ -1162,7 +1206,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
           'show_remaining_days' => 0,
         ),
         'type' => 'date_default',
-        'weight' => 13,
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1223,14 +1267,14 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 20,
+        'weight' => 18,
       ),
       'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 23,
+        'weight' => 21,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -1270,14 +1314,14 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 19,
+        'weight' => 17,
       ),
       'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 14,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1321,14 +1365,14 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 22,
+        'weight' => 21,
       ),
       'full' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 24,
+        'weight' => 22,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1372,7 +1416,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => 10,
       ),
       'full' => array(
         'label' => 'above',
@@ -1422,7 +1466,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 35,
+        'weight' => 33,
       ),
       'full' => array(
         'label' => 'above',
@@ -1436,7 +1480,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
-        'weight' => 37,
+        'weight' => 34,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1472,13 +1516,13 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 44,
+        'weight' => 40,
       ),
       'full' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 44,
+        'weight' => 40,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1519,13 +1563,13 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 42,
+        'weight' => 38,
       ),
       'full' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 42,
+        'weight' => 38,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1563,13 +1607,13 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 43,
+        'weight' => 39,
       ),
       'full' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 43,
+        'weight' => 39,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1613,13 +1657,13 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 37,
+        'weight' => 35,
       ),
       'full' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 38,
+        'weight' => 35,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1658,14 +1702,14 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 27,
+        'weight' => 25,
       ),
       'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 29,
+        'weight' => 26,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1719,7 +1763,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 9,
+        'weight' => 7,
       ),
       'full' => array(
         'label' => 'above',
@@ -1770,14 +1814,14 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 33,
+        'weight' => 31,
       ),
       'full' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 35,
+        'weight' => 32,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1805,7 +1849,7 @@ At opnå kendskab til...
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 24,
+      'weight' => 51,
     ),
   );
 
@@ -1821,14 +1865,14 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_plain',
-        'weight' => 32,
+        'weight' => 30,
       ),
       'full' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 32,
+        'weight' => 29,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1850,7 +1894,7 @@ At opnå kendskab til...
       'module' => 'html5_tools',
       'settings' => array(),
       'type' => 'emailwidget',
-      'weight' => 26,
+      'weight' => 53,
     ),
   );
 
@@ -1868,7 +1912,7 @@ At opnå kendskab til...
           'custom_title' => '',
         ),
         'type' => 'link_default',
-        'weight' => 31,
+        'weight' => 29,
       ),
       'full' => array(
         'label' => 'above',
@@ -1877,7 +1921,7 @@ At opnå kendskab til...
           'custom_title' => '',
         ),
         'type' => 'link_default',
-        'weight' => 33,
+        'weight' => 30,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1919,7 +1963,7 @@ At opnå kendskab til...
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 25,
+      'weight' => 52,
     ),
   );
 
@@ -1935,14 +1979,14 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 34,
+        'weight' => 32,
       ),
       'full' => array(
         'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 36,
+        'weight' => 33,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1964,7 +2008,7 @@ At opnå kendskab til...
       'module' => 'html5_tools',
       'settings' => array(),
       'type' => 'telwidget',
-      'weight' => 27,
+      'weight' => 54,
     ),
   );
 
@@ -1980,14 +2024,14 @@ At opnå kendskab til...
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 21,
+        'weight' => 19,
       ),
       'full' => array(
         'label' => 'above',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 18,
+        'weight' => 16,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2006,53 +2050,11 @@ At opnå kendskab til...
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
       'type' => 'options_buttons',
-      'weight' => 13,
-    ),
-  );
-
-  // Exported field_instance: 'node-education-field_subjects_youth'.
-  $field_instances['node-education-field_subjects_youth'] = array(
-    'bundle' => 'education',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_plain',
-        'weight' => 23,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_plain',
-        'weight' => 19,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 38,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_subjects_youth',
-    'label' => 'Fag',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 14,
+      'weight' => 11,
     ),
   );
 
@@ -2068,14 +2070,14 @@ At opnå kendskab til...
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'full' => array(
         'label' => 'above',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 10,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2096,7 +2098,7 @@ At opnå kendskab til...
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 11,
+      'weight' => 9,
     ),
   );
 
@@ -2115,13 +2117,13 @@ At opnå kendskab til...
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 40,
+        'weight' => 37,
       ),
       'full' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 40,
+        'weight' => 37,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2164,7 +2166,7 @@ At opnå kendskab til...
           'video_style' => 'normal',
         ),
         'type' => 'video_embed_field',
-        'weight' => 25,
+        'weight' => 23,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -2175,7 +2177,7 @@ At opnå kendskab til...
           'video_style' => 'normal',
         ),
         'type' => 'video_embed_field',
-        'weight' => 25,
+        'weight' => 23,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4090,6 +4092,39 @@ At opnå kendskab til...
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-competencies-field_parent_subject'.
+  $field_instances['taxonomy_term-competencies-field_parent_subject'] = array(
+    'bundle' => 'competencies',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_parent_subject',
+    'label' => 'Fag',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 1,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('<p class="is-preschool">
@@ -4133,6 +4168,7 @@ At opnå kendskab til...
   t('Hele året');
   t('Hvilke faciliteter kan I tilbyde?');
   t('Inspirationsmateriale');
+  t('Kompetenceområder');
   t('Kun hvis dette er valgt, vil eventet i pretix automatisk blive opdateret med eventindstillinger på denne side. ');
   t('Læreplanstemaer');
   t('Message form');

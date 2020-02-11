@@ -89,8 +89,6 @@ function ulf_hjoerring_settings_user_presave(&$edit, $account, $category)
 function ulf_hjoerring_settings_form_alter(&$form, &$form_state, $form_id)
 {
   if($form_id == 'internship_node_form' || $form_id == 'education_node_form') {
-//    kint($form_id);
-//    kint($form);die;
     $node = $form_state['node'];
     $form['company'] = $form['author'];
     unset($form['company']['date']);
@@ -108,6 +106,52 @@ function ulf_hjoerring_settings_form_alter(&$form, &$form_state, $form_id)
     $form['company']['#group'] = null;
     $form['company']['#collapsed'] = false;
     $form['company']['#title'] = 'Udbyder';
-//    kint($form);die;
+
+
+    if($form_id == 'education_node_form') {
+      $form['field_subjects_primary_school']['und']['#ajax'] = [
+        'callback' => 'dynamically_change_competencies_options',
+        'wrapper' => 'competencies-wrapper',
+        'method' => 'replace',
+        'effect' => 'fade',
+      ];
+      $form['field_competencies']['und']['#prefix'] = '<div id="competencies-wrapper">';
+      $form['field_competencies']['und']['#suffix'] = '</div>';
+
+      if(isset($form_state['values'])) {
+        //ajax request
+        $subjects = array_column($form_state['values']['field_subjects_primary_school']['und'], 'tid');
+        if($subjects[0] === null) {
+          $subjects = [];
+        }
+      } else if(!isset($node->nid) || isset($node->is_new)) {
+        //creating new node
+        $subjects = [];
+      } else {
+        //editing existing node
+        $subjects = [];
+        if(isset($node->field_subjects_primary_school['und'])) {
+          $subjects = array_column($node->field_subjects_primary_school['und'], 'tid');
+        }
+      }
+
+      $taxonomy_tree = taxonomy_get_tree(taxonomy_vocabulary_machine_name_load('competencies')->vid, 0, null, true);
+      $competencies_options = [];
+      foreach ($taxonomy_tree as $term) {
+        if(in_array($term->field_parent_subject['und'][0]['tid'], $subjects)) {
+          $competencies_options[$term->tid] = $term->name;
+        }
+      }
+
+      $form['field_competencies']['und']['#options'] = $competencies_options;
+      if(!$competencies_options) {
+        $form['field_competencies']['und']['#description'] = 'Vælg først fag';
+      }
+
+    }
   }
+}
+
+function dynamically_change_competencies_options($form, $form_state) {
+  return $form['field_competencies'];
 }
