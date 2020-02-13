@@ -155,3 +155,26 @@ function ulf_hjoerring_settings_form_alter(&$form, &$form_state, $form_id)
 function dynamically_change_competencies_options($form, $form_state) {
   return $form['field_competencies'];
 }
+
+function ulf_hjoerring_settings_views_default_views_alter(&$views) {
+  if(isset($views['ulf_workbench_edits_by_user'])) {
+    $view = $views['ulf_workbench_edits_by_user'];
+    foreach ($view->display as $id => $display) {
+      if($filter = $view->get_item($id, 'filter', 'type')) {
+        $filter['value']['internship'] = 'internship';
+        $filter['value']['education'] = 'education';
+        $view->set_item($id, 'filter', 'type', $filter);
+      }
+    }
+  }
+  if(isset($views['ulf_frontpage_promoted_courses'])) {
+    $view = $views['ulf_frontpage_promoted_courses'];
+    foreach ($view->display as $id => $display) {
+      if($filter = $view->get_item($id, 'filter', 'type')) {
+        $filter['value']['internship'] = 'internship';
+        $filter['value']['education'] = 'education';
+        $view->set_item($id, 'filter', 'type', $filter);
+      }
+    }
+  }
+}
