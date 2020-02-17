@@ -671,7 +671,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 34,
+        'weight' => 35,
       ),
       'full' => array(
         'label' => 'above',
@@ -986,7 +986,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 36,
+        'weight' => 37,
       ),
       'full' => array(
         'label' => 'above',
@@ -1141,7 +1141,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 41,
+        'weight' => 42,
       ),
       'full' => array(
         'label' => 'above',
@@ -1466,7 +1466,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 33,
+        'weight' => 34,
       ),
       'full' => array(
         'label' => 'above',
@@ -1516,7 +1516,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 40,
+        'weight' => 41,
       ),
       'full' => array(
         'label' => 'above',
@@ -1563,7 +1563,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 38,
+        'weight' => 39,
       ),
       'full' => array(
         'label' => 'above',
@@ -1607,7 +1607,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 39,
+        'weight' => 40,
       ),
       'full' => array(
         'label' => 'above',
@@ -1657,7 +1657,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 35,
+        'weight' => 36,
       ),
       'full' => array(
         'label' => 'above',
@@ -1687,6 +1687,54 @@ function ulf_hjoerring_settings_field_default_field_instances() {
       ),
       'type' => 'options_onoff',
       'weight' => 16,
+    ),
+  );
+
+  // Exported field_instance: 'node-education-field_pretix_widget'.
+  $field_instances['node-education-field_pretix_widget'] = array(
+    'bundle' => 'education',
+    'default_value' => array(
+      0 => array(
+        'value' => 'list',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 33,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pretix_widget',
+    'label' => 'Pretix Widget',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 20,
     ),
   );
 
@@ -2117,7 +2165,7 @@ At opnå kendskab til...
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 37,
+        'weight' => 38,
       ),
       'full' => array(
         'label' => 'above',
@@ -2220,7 +2268,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 10,
+        'weight' => 7,
       ),
       'full' => array(
         'label' => 'above',
@@ -2271,7 +2319,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 11,
+        'weight' => 8,
       ),
       'full' => array(
         'label' => 'above',
@@ -2324,7 +2372,7 @@ At opnå kendskab til...
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 6,
+        'weight' => 3,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -2375,7 +2423,7 @@ At opnå kendskab til...
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 4,
+        'weight' => 1,
       ),
       'full' => array(
         'label' => 'above',
@@ -2428,7 +2476,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 2,
       ),
       'full' => array(
         'label' => 'above',
@@ -2484,7 +2532,7 @@ At opnå kendskab til...
           'thousand_separator' => ' ',
         ),
         'type' => 'number_decimal',
-        'weight' => 26,
+        'weight' => 18,
       ),
       'full' => array(
         'label' => 'above',
@@ -2537,7 +2585,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 28,
+        'weight' => 20,
       ),
       'full' => array(
         'label' => 'above',
@@ -2588,7 +2636,7 @@ At opnå kendskab til...
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'full' => array(
         'label' => 'above',
@@ -2634,7 +2682,7 @@ At opnå kendskab til...
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 24,
+        'weight' => 16,
       ),
       'full' => array(
         'label' => 'above',
@@ -2680,7 +2728,7 @@ At opnå kendskab til...
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 16,
+        'weight' => 13,
       ),
       'full' => array(
         'label' => 'above',
@@ -2726,7 +2774,7 @@ At opnå kendskab til...
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 14,
+        'weight' => 11,
       ),
       'full' => array(
         'label' => 'above',
@@ -2770,7 +2818,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 15,
+        'weight' => 12,
       ),
       'full' => array(
         'label' => 'above',
@@ -2824,7 +2872,7 @@ At opnå kendskab til...
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 36,
+        'weight' => 29,
       ),
       'full' => array(
         'label' => 'above',
@@ -2871,7 +2919,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'above',
@@ -2926,7 +2974,7 @@ At opnå kendskab til...
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 7,
+        'weight' => 4,
       ),
       'full' => array(
         'label' => 'above',
@@ -3025,7 +3073,7 @@ At opnå kendskab til...
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 17,
+        'weight' => 14,
       ),
       'full' => array(
         'label' => 'above',
@@ -3077,7 +3125,7 @@ At opnå kendskab til...
           'show_remaining_days' => 0,
         ),
         'type' => 'date_default',
-        'weight' => 30,
+        'weight' => 22,
       ),
       'full' => array(
         'label' => 'above',
@@ -3139,7 +3187,7 @@ At opnå kendskab til...
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 39,
+        'weight' => 31,
       ),
       'full' => array(
         'label' => 'above',
@@ -3182,7 +3230,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 13,
+        'weight' => 10,
       ),
       'full' => array(
         'label' => 'above',
@@ -3241,7 +3289,7 @@ At opnå kendskab til...
           'view_mode' => 'default',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 29,
+        'weight' => 21,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -3294,7 +3342,7 @@ At opnå kendskab til...
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 45,
+        'weight' => 36,
       ),
       'full' => array(
         'label' => 'above',
@@ -3339,7 +3387,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 22,
+        'weight' => 15,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -3390,7 +3438,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => 9,
       ),
       'full' => array(
         'label' => 'above',
@@ -3440,7 +3488,7 @@ At opnå kendskab til...
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 35,
+        'weight' => 27,
       ),
       'full' => array(
         'label' => 'above',
@@ -3490,7 +3538,7 @@ At opnå kendskab til...
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 44,
+        'weight' => 35,
       ),
       'full' => array(
         'label' => 'above',
@@ -3537,7 +3585,7 @@ At opnå kendskab til...
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 42,
+        'weight' => 33,
       ),
       'full' => array(
         'label' => 'above',
@@ -3581,7 +3629,7 @@ At opnå kendskab til...
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 43,
+        'weight' => 34,
       ),
       'full' => array(
         'label' => 'above',
@@ -3631,7 +3679,7 @@ At opnå kendskab til...
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 37,
+        'weight' => 30,
       ),
       'full' => array(
         'label' => 'above',
@@ -3664,6 +3712,54 @@ At opnå kendskab til...
     ),
   );
 
+  // Exported field_instance: 'node-internship-field_pretix_widget'.
+  $field_instances['node-internship-field_pretix_widget'] = array(
+    'bundle' => 'internship',
+    'default_value' => array(
+      0 => array(
+        'value' => 'list',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 28,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pretix_widget',
+    'label' => 'Pretix Widget',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 57,
+    ),
+  );
+
   // Exported field_instance: 'node-internship-field_price_description'.
   $field_instances['node-internship-field_price_description'] = array(
     'bundle' => 'internship',
@@ -3676,7 +3772,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 27,
+        'weight' => 19,
       ),
       'full' => array(
         'label' => 'above',
@@ -3737,7 +3833,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 9,
+        'weight' => 6,
       ),
       'full' => array(
         'label' => 'above',
@@ -3788,7 +3884,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 33,
+        'weight' => 25,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -3839,7 +3935,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_plain',
-        'weight' => 32,
+        'weight' => 24,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -3886,7 +3982,7 @@ At opnå kendskab til...
           'custom_title' => '',
         ),
         'type' => 'link_default',
-        'weight' => 31,
+        'weight' => 23,
       ),
       'full' => array(
         'label' => 'above',
@@ -3953,7 +4049,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 34,
+        'weight' => 26,
       ),
       'full' => array(
         'label' => 'inline',
@@ -4001,7 +4097,7 @@ At opnå kendskab til...
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 40,
+        'weight' => 32,
       ),
       'full' => array(
         'label' => 'above',
@@ -4050,7 +4146,7 @@ At opnå kendskab til...
           'video_style' => 'normal',
         ),
         'type' => 'video_embed_field',
-        'weight' => 25,
+        'weight' => 17,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -4313,6 +4409,7 @@ At opnå kendskab til...
   t('Målgruppe');
   t('Passed review');
   t('Periode');
+  t('Pretix Widget');
   t('Pris');
   t('Show pretix widget from another course.');
   t('Show widget from');

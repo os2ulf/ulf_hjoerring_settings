@@ -591,12 +591,7 @@ function ulf_hjoerring_settings_field_group_info() {
     'children' => array(
       0 => 'field_count',
       1 => 'field_count_description',
-      2 => 'field_subject',
-      3 => 'field_offer_type',
-      4 => 'field_target_group_sub',
-      5 => 'field_educational_goals',
-      6 => 'field_subjects_primary_school',
-      7 => 'field_subjects_youth',
+      2 => 'field_educational_goals',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -630,6 +625,7 @@ function ulf_hjoerring_settings_field_group_info() {
       2 => 'field_pretix_enable',
       3 => 'field_pretix_show_widget_from',
       4 => 'field_pretix_synchronize',
+      5 => 'field_pretix_widget',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -662,6 +658,7 @@ function ulf_hjoerring_settings_field_group_info() {
       2 => 'field_pretix_show_widget_from',
       3 => 'field_pretix_date',
       4 => 'field_pretix_email_recipient',
+      5 => 'field_pretix_widget',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
