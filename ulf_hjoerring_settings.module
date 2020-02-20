@@ -28,17 +28,26 @@ function ulf_hjoerring_settings_secure_permissions($role) {
   $permissions = [];
   if($role == 'company consultant') {
     // by default company consultants have the same permissions as editors, with a few alterations
-    $permissions = secure_permissions_data_secure_permissions('editor');
+    $permissions = [
+      'assign company consultant role',
+      'assign company role',
+      'create news_course_provider content',
+      'create internship content',
+      'edit any internship content',
+      'edit own internship content',
+      'create education content',
+      'edit any education content',
+      'edit own education content',
+    ];
 
-    $permissions[] = 'assign company consultant role';
-    $permissions[] = 'assign company role';
-    $permissions[] = 'create news_course_provider content';
-    $permissions[] = 'create internship content';
-    $permissions[] = 'edit any internship content';
-    $permissions[] = 'edit own internship content';
-    $permissions[] = 'create education content';
-    $permissions[] = 'edit any education content';
-    $permissions[] = 'edit own education content';
+    $modules = module_implements('secure_permissions');
+    foreach ($modules as $module) {
+      $function = $module.'_secure_permissions';
+      $add_permissions = $function('editor');
+      if($add_permissions) {
+        $permissions = array_merge($permissions, $add_permissions);
+      }
+    }
 
     $remove = [
       'assign editor role',
@@ -50,22 +59,13 @@ function ulf_hjoerring_settings_secure_permissions($role) {
       'edit any course_educators content',
       'edit own course_educators content',
     ];
-
-    foreach ($remove as $permission) {
-      if (($key = array_search($permission, $permissions)) !== false) {
-        unset($permissions[$key]);
-      }
-    }
-
+    $permissions = array_diff($permissions, $remove);
   }
+
   if($role == 'company') {
     // companies should never actually log in, so their permissions doesn't matter
     $permissions = [];
   }
-
-  //todo: should be deleted
-  $permissions[] = 'access kint devel information';
-  $permissions[] = 'administer kint settings';
 
   return $permissions;
 }
