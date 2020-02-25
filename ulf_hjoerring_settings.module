@@ -84,6 +84,19 @@ function ulf_hjoerring_settings_user_presave(&$edit, $account, $category)
 }
 
 /**
+ * Implements hook_field_default_field_bases_alter().
+ */
+
+function ulf_hjoerring_settings_field_default_field_bases_alter(&$fields)
+{
+  if(isset($fields['field_message_parent_node'])) {
+    $fields['field_message_parent_node']['settings']['handler_settings']['target_bundles']['internship'] = 'internship';
+    $fields['field_message_parent_node']['settings']['handler_settings']['target_bundles']['education'] = 'education';
+  }
+}
+
+
+/**
  * Implements hook_form_alter().
  */
 function ulf_hjoerring_settings_form_alter(&$form, &$form_state, $form_id)
@@ -102,14 +115,14 @@ function ulf_hjoerring_settings_form_alter(&$form, &$form_state, $form_id)
     $form['company']['name']['#required'] = true;
     $form['company']['name']['#title'] = 'Udbyder';
     $form['company']['#attributes']['class'] = [];
-    $form['company']['#weight'] = -49;
+    $form['company']['#weight'] = -9;
     $form['company']['#group'] = null;
     $form['company']['#collapsed'] = false;
     $form['company']['#title'] = 'Udbyder';
 
 
     if($form_id == 'education_node_form') {
-      $form['field_subjects_primary_school']['und']['#ajax'] = [
+      $form['field_subjects_primary_school'][LANGUAGE_NONE]['#ajax'] = [
         'callback' => 'dynamically_change_competencies_options',
         'wrapper' => 'competencies-wrapper',
         'method' => 'replace',
