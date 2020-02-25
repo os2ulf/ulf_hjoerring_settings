@@ -469,50 +469,6 @@ function ulf_hjoerring_settings_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-education-field_educational_goals'.
-  $field_instances['node-education-field_educational_goals'] = array(
-    'bundle' => 'education',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_plain',
-        'weight' => 22,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_plain',
-        'weight' => 18,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 35,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_educational_goals',
-    'label' => 'Læreplanstemaer',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 10,
-    ),
-  );
-
   // Exported field_instance: 'node-education-field_educational_material'.
   $field_instances['node-education-field_educational_material'] = array(
     'bundle' => 'education',
@@ -547,7 +503,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_educational_material',
-    'label' => 'Undervisningsmateriale',
+    'label' => 'Materiale',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -858,54 +814,6 @@ function ulf_hjoerring_settings_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-education-field_inspirational_material'.
-  $field_instances['node-education-field_inspirational_material'] = array(
-    'bundle' => 'education',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Er der inspirationsmateriale tilknyttet besøget/forløbet? Her kan du uploade materialet.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'field_collection',
-        'settings' => array(
-          'view_mode' => 'full',
-        ),
-        'type' => 'field_collection_fields',
-        'weight' => 15,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'field_collection',
-        'settings' => array(
-          'view_mode' => 'full',
-        ),
-        'type' => 'field_collection_fields',
-        'weight' => 8,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 7,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_inspirational_material',
-    'label' => 'Inspirationsmateriale',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'field_collection',
-      'settings' => array(),
-      'type' => 'field_collection_embed',
-      'weight' => 51,
-    ),
-  );
-
   // Exported field_instance: 'node-education-field_last_signup_date'.
   $field_instances['node-education-field_last_signup_date'] = array(
     'bundle' => 'education',
@@ -952,7 +860,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
     'label' => 'Tilmeldingsfrist',
     'required' => 0,
     'settings' => array(
-      'default_value' => 'now',
+      'default_value' => 'blank',
       'default_value2' => 'same',
       'default_value_code' => '',
       'default_value_code2' => '',
@@ -1014,57 +922,6 @@ function ulf_hjoerring_settings_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 42,
-    ),
-  );
-
-  // Exported field_instance: 'node-education-field_material_suggestions'.
-  $field_instances['node-education-field_material_suggestions'] = array(
-    'bundle' => 'education',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 11,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 6,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 31,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_material_suggestions',
-    'label' => 'Forslag til forberedelse og/eller efterbehandling i daginstitutionen',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'maxlength_js' => '',
-        'maxlength_js_enforce' => 0,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'maxlength_js_truncate_html' => 0,
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 10,
     ),
   );
 
@@ -1170,7 +1027,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 20,
+      'weight' => 16,
     ),
   );
 
@@ -2091,7 +1948,7 @@ At opnå kendskab til...
     'entity_type' => 'node',
     'field_name' => 'field_subjects_primary_school',
     'label' => 'Fag',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -2194,7 +2051,7 @@ At opnå kendskab til...
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 12,
+      'weight' => 13,
     ),
   );
 
@@ -2670,50 +2527,6 @@ At opnå kendskab til...
     ),
   );
 
-  // Exported field_instance: 'node-internship-field_educational_goals'.
-  $field_instances['node-internship-field_educational_goals'] = array(
-    'bundle' => 'internship',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_plain',
-        'weight' => 16,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_plain',
-        'weight' => 20,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 35,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_educational_goals',
-    'label' => 'Læreplanstemaer',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 12,
-    ),
-  );
-
   // Exported field_instance: 'node-internship-field_educational_material'.
   $field_instances['node-internship-field_educational_material'] = array(
     'bundle' => 'internship',
@@ -2748,7 +2561,7 @@ At opnå kendskab til...
     ),
     'entity_type' => 'node',
     'field_name' => 'field_educational_material',
-    'label' => 'Undervisningsmateriale',
+    'label' => 'Materiale',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -3059,54 +2872,6 @@ At opnå kendskab til...
     ),
   );
 
-  // Exported field_instance: 'node-internship-field_inspirational_material'.
-  $field_instances['node-internship-field_inspirational_material'] = array(
-    'bundle' => 'internship',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Er der inspirationsmateriale tilknyttet besøget/forløbet? Her kan du uploade materialet.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'field_collection',
-        'settings' => array(
-          'view_mode' => 'full',
-        ),
-        'type' => 'field_collection_fields',
-        'weight' => 14,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'field_collection',
-        'settings' => array(
-          'view_mode' => 'full',
-        ),
-        'type' => 'field_collection_fields',
-        'weight' => 8,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 7,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_inspirational_material',
-    'label' => 'Inspirationsmateriale',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'field_collection',
-      'settings' => array(),
-      'type' => 'field_collection_embed',
-      'weight' => 40,
-    ),
-  );
-
   // Exported field_instance: 'node-internship-field_last_signup_date'.
   $field_instances['node-internship-field_last_signup_date'] = array(
     'bundle' => 'internship',
@@ -3153,7 +2918,7 @@ At opnå kendskab til...
     'label' => 'Tilmeldingsfrist',
     'required' => 0,
     'settings' => array(
-      'default_value' => 'now',
+      'default_value' => 'blank',
       'default_value2' => 'same',
       'default_value_code' => '',
       'default_value_code2' => '',
@@ -3215,57 +2980,6 @@ At opnå kendskab til...
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 42,
-    ),
-  );
-
-  // Exported field_instance: 'node-internship-field_material_suggestions'.
-  $field_instances['node-internship-field_material_suggestions'] = array(
-    'bundle' => 'internship',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 10,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 6,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 31,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_material_suggestions',
-    'label' => 'Forslag til forberedelse og/eller efterbehandling i daginstitutionen',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'maxlength_js' => '',
-        'maxlength_js_enforce' => 0,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'maxlength_js_truncate_html' => 0,
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 10,
     ),
   );
 
@@ -4230,9 +3944,10 @@ At opnå kendskab til...
     'display' => array(
       'default' => array(
         'label' => 'above',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 13,
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 12,
       ),
     ),
     'entity_type' => 'user',
@@ -4244,12 +3959,12 @@ At opnå kendskab til...
     ),
     'widget' => array(
       'active' => 0,
-      'module' => 'taxonomy',
+      'module' => 'options',
       'settings' => array(
         'autocomplete_path' => 'taxonomy/autocomplete',
         'size' => 60,
       ),
-      'type' => 'taxonomy_autocomplete',
+      'type' => 'options_buttons',
       'weight' => 29,
     ),
   );
@@ -4269,7 +3984,7 @@ At opnå kendskab til...
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 15,
       ),
     ),
     'entity_type' => 'user',
@@ -4301,24 +4016,24 @@ At opnå kendskab til...
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 15,
+        'weight' => 14,
       ),
     ),
     'entity_type' => 'user',
     'field_name' => 'field_lokation',
-    'label' => 'Lokation',
+    'label' => 'Postnummer',
     'required' => 0,
     'settings' => array(
       'user_register_form' => 0,
     ),
     'widget' => array(
       'active' => 0,
-      'module' => 'taxonomy',
+      'module' => 'options',
       'settings' => array(
         'autocomplete_path' => 'taxonomy/autocomplete',
         'size' => 60,
       ),
-      'type' => 'taxonomy_autocomplete',
+      'type' => 'options_buttons',
       'weight' => 31,
     ),
   );
@@ -4332,26 +4047,27 @@ At opnå kendskab til...
     'display' => array(
       'default' => array(
         'label' => 'above',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 14,
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 13,
       ),
     ),
     'entity_type' => 'user',
     'field_name' => 'field_tilbudsforpligtelser',
-    'label' => 'Tilbudsforpligtelser',
+    'label' => 'Muligheder',
     'required' => 0,
     'settings' => array(
       'user_register_form' => 0,
     ),
     'widget' => array(
       'active' => 0,
-      'module' => 'taxonomy',
+      'module' => 'options',
       'settings' => array(
         'autocomplete_path' => 'taxonomy/autocomplete',
         'size' => 60,
       ),
-      'type' => 'taxonomy_autocomplete',
+      'type' => 'options_buttons',
       'weight' => 30,
     ),
   );
@@ -4389,26 +4105,24 @@ At opnå kendskab til...
   t('Email recipient');
   t('Email til tilmelding');
   t('Enable pretix');
-  t('Er der inspirationsmateriale tilknyttet besøget/forløbet? Her kan du uploade materialet.');
   t('Er der undervisningsmateriale tilknyttet besøget/forløbet? Her kan du uploade materialet');
   t('Faciliteter');
   t('Fag');
   t('Forberedelse');
   t('Formål');
-  t('Forslag til forberedelse og/eller efterbehandling i daginstitutionen');
   t('Garantipartner');
   t('Gratis');
   t('Hele året');
   t('Hvilke faciliteter kan I tilbyde?');
-  t('Inspirationsmateriale');
   t('Kompetenceområder');
   t('Kun hvis dette er valgt, vil eventet i pretix automatisk blive opdateret med eventindstillinger på denne side. ');
-  t('Lokation');
-  t('Læreplanstemaer');
+  t('Materiale');
   t('Message form');
+  t('Muligheder');
   t('Målgruppe');
   t('Passed review');
   t('Periode');
+  t('Postnummer');
   t('Pretix Widget');
   t('Pris');
   t('Show pretix widget from another course.');
@@ -4416,12 +4130,10 @@ At opnå kendskab til...
   t('Skriv ikke jeres faste fysiske adresse her, den har vi allerede. Anvend dette felt til ekstraoplysninger om forløbets sted: Eks. \'Store Sal\', \'Brug højre indgang - ring på dørklokken\' eller en alternativ adresse end jeres faste fysiske adresse.');
   t('Sted (ekstraoplysninger): Eks. \'Store Sal\', \'Brug højre indgang - ring på dørklokken\' ');
   t('Telefonnummer til tilmelding.');
-  t('Tilbudsforpligtelser');
   t('Tilmelding');
   t('Tilmeldingsfrist');
   t('Tlf.nr.');
   t('Trashed');
-  t('Undervisningsmateriale');
   t('Upload et billede/illustration');
   t('Varighed');
   t('Vedligehold event i pretix');

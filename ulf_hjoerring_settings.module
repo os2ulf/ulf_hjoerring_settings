@@ -120,6 +120,12 @@ function ulf_hjoerring_settings_form_alter(&$form, &$form_state, $form_id)
     $form['company']['#collapsed'] = false;
     $form['company']['#title'] = 'Udbyder';
 
+    $form['field_period']['#states'] = [
+      'invisible' => [
+        ':input[name="field_period_full_year[und]"]' => ['checked' => true],
+      ],
+    ];
+
 
     if($form_id == 'education_node_form') {
       $form['field_subjects_primary_school'][LANGUAGE_NONE]['#ajax'] = [

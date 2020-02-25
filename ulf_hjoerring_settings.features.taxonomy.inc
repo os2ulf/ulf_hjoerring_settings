@@ -27,7 +27,7 @@ function ulf_hjoerring_settings_taxonomy_default_vocabularies() {
       'weight' => 0,
     ),
     'lokation' => array(
-      'name' => 'Lokation',
+      'name' => 'Postnummer',
       'machine_name' => 'lokation',
       'description' => '',
       'hierarchy' => 0,
@@ -35,7 +35,7 @@ function ulf_hjoerring_settings_taxonomy_default_vocabularies() {
       'weight' => 0,
     ),
     'tilbudsforpligtelser' => array(
-      'name' => 'Tilbudsforpligtelser',
+      'name' => 'Muligheder',
       'machine_name' => 'tilbudsforpligtelser',
       'description' => '',
       'hierarchy' => 0,

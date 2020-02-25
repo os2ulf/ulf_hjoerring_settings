@@ -87,10 +87,10 @@ function ulf_hjoerring_settings_strongarm() {
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '9',
+          'weight' => '10',
         ),
         'redirect' => array(
-          'weight' => '10',
+          'weight' => '11',
         ),
       ),
       'display' => array(),

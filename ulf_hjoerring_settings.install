@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * Populate ife database table.
+ */
+function ulf_hjoerring_settings_update_7001(&$sandbox) {
+  db_insert('ife')
+    ->fields(array(
+      'form_id' => 'internship_node_form',
+      'field_types' => NULL,
+      'status' => 1,
+      'display' => 0,
+    ))->execute();
+  db_insert('ife')
+    ->fields(array(
+      'form_id' => 'education_node_form',
+      'field_types' => NULL,
+      'status' => 1,
+      'display' => 0,
+    ))->execute();
+}

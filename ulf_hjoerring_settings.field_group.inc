@@ -22,7 +22,7 @@ function ulf_hjoerring_settings_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Vis kontaktformular / Skjul kontaktformular',
-    'weight' => '13',
+    'weight' => '14',
     'children' => array(
       0 => 'field_message_form',
     ),
@@ -84,8 +84,7 @@ function ulf_hjoerring_settings_field_group_info() {
     'children' => array(
       0 => 'field_activities',
       1 => 'field_background_knowledge',
-      2 => 'field_material_suggestions',
-      3 => 'field_post_work',
+      2 => 'field_post_work',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -214,7 +213,7 @@ function ulf_hjoerring_settings_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Varighed og pris',
-    'weight' => '3',
+    'weight' => '4',
     'children' => array(
       0 => 'field_collection_price',
       1 => 'field_duration',
@@ -282,7 +281,7 @@ function ulf_hjoerring_settings_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Faciliteter',
-    'weight' => '7',
+    'weight' => '8',
     'children' => array(
       0 => 'field_facilities',
       1 => 'field_facilities_info',
@@ -342,7 +341,7 @@ function ulf_hjoerring_settings_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Materialer',
-    'weight' => '8',
+    'weight' => '9',
     'children' => array(
       0 => 'field_educational_material',
       1 => 'field_inspirational_material',
@@ -402,7 +401,7 @@ function ulf_hjoerring_settings_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Billeder/medier',
-    'weight' => '6',
+    'weight' => '7',
     'children' => array(
       0 => 'field_image',
       1 => 'field_video',
@@ -462,7 +461,7 @@ function ulf_hjoerring_settings_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Periode',
-    'weight' => '5',
+    'weight' => '6',
     'children' => array(
       0 => 'field_period',
       1 => 'field_period_full_year',
@@ -493,7 +492,7 @@ function ulf_hjoerring_settings_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Lokation',
-    'weight' => '11',
+    'weight' => '12',
     'children' => array(
       0 => 'field_map_placement',
       1 => 'field_place',
@@ -618,7 +617,7 @@ function ulf_hjoerring_settings_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'pretix',
-    'weight' => '14',
+    'weight' => '15',
     'children' => array(
       0 => 'field_pretix_date',
       1 => 'field_pretix_email_recipient',
@@ -684,7 +683,7 @@ function ulf_hjoerring_settings_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tilmelding',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
       0 => 'field_last_signup_date',
       1 => 'field_signup_description',
