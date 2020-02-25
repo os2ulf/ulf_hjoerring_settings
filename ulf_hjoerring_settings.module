@@ -154,11 +154,12 @@ function ulf_hjoerring_settings_form_alter(&$form, &$form_state, $form_id)
         }
       }
 
+      $subject_options = $form['field_subjects_primary_school'][LANGUAGE_NONE]['#options'];
       $taxonomy_tree = taxonomy_get_tree(taxonomy_vocabulary_machine_name_load('competencies')->vid, 0, null, true);
       $competencies_options = [];
       foreach ($taxonomy_tree as $term) {
         if(in_array($term->field_parent_subject['und'][0]['tid'], $subjects)) {
-          $competencies_options[$term->tid] = $term->name;
+          $competencies_options[$term->tid] = $subject_options[$term->field_parent_subject['und'][0]['tid']].' - '.$term->name;
         }
       }
 
