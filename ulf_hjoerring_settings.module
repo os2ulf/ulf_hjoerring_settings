@@ -170,6 +170,27 @@ function ulf_hjoerring_settings_form_alter(&$form, &$form_state, $form_id)
 
     }
   }
+
+  if($form_id == 'taxonomy_overview_terms') {
+    if($form['#vocabulary']->machine_name == 'competencies') {
+      //adding parent subject names to term name om competencies vocabulary overview
+      $competencies_map = [];
+      foreach (taxonomy_get_tree($form['#vocabulary']->vid, 0, null, true) as $competency) {
+        $competencies_map[$competency->tid] = $competency->field_parent_subject[LANGUAGE_NONE][0]['tid'];
+      }
+      $subjects = [];
+      foreach (taxonomy_get_tree(taxonomy_vocabulary_machine_name_load('subjects_primary_school')->vid, 0, null, false) as $subject) {
+        $subjects[$subject->tid] = $subject->name;
+      }
+      foreach ($form as $key => $value) {
+        if(strpos($key, 'tid:') === 0 && isset($value['tid'])) {
+          if(isset($competencies_map[$value['tid']['#value']]) && isset($subjects[$competencies_map[$value['tid']['#value']]])) {
+            $form[$key]['view']['#title'] = $subjects[$competencies_map[$value['tid']['#value']]].' - '.$form[$key]['view']['#title'];
+          }
+        }
+      }
+    }
+  }
 }
 
 function dynamically_change_competencies_options($form, $form_state) {
