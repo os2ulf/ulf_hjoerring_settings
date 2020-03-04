@@ -19,3 +19,23 @@ function ulf_hjoerring_settings_update_7001(&$sandbox) {
       'display' => 0,
     ))->execute();
 }
+
+/**
+ * Add captcha to request form.
+ */
+function ulf_hjoerring_settings_update_7002 () {
+
+  $types = db_select('entityform_type', 'e')
+    ->fields('e', array('type'))
+    ->execute()
+    ->fetchCol();
+
+  foreach ($types as $type) {
+    db_insert('captcha_points')
+      ->fields(array(
+        'form_id' => $type.'_entityform_edit_form',
+        'captcha_type' => 'default',
+      ))
+      ->execute();
+  }
+}
