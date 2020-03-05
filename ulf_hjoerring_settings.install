@@ -1,9 +1,41 @@
 <?php
 
 /**
- * Set up configurations specific to Hjørring
+ * Populate ife database table.
  */
-function ulf_hjoerring_settings_install() {
-
+function ulf_hjoerring_settings_update_7001(&$sandbox) {
+  db_insert('ife')
+    ->fields(array(
+      'form_id' => 'internship_node_form',
+      'field_types' => NULL,
+      'status' => 1,
+      'display' => 0,
+    ))->execute();
+  db_insert('ife')
+    ->fields(array(
+      'form_id' => 'education_node_form',
+      'field_types' => NULL,
+      'status' => 1,
+      'display' => 0,
+    ))->execute();
 }
 
+/**
+ * Add captcha to request form.
+ */
+function ulf_hjoerring_settings_update_7002 () {
+
+  $types = db_select('entityform_type', 'e')
+    ->fields('e', array('type'))
+    ->execute()
+    ->fetchCol();
+
+  foreach ($types as $type) {
+    db_insert('captcha_points')
+      ->fields(array(
+        'form_id' => $type.'_entityform_edit_form',
+        'captcha_type' => 'default',
+      ))
+      ->execute();
+  }
+}
