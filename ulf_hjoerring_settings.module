@@ -71,6 +71,31 @@ function ulf_hjoerring_settings_secure_permissions($role) {
 }
 
 /**
+ * Implements hook_menu_alter().
+ *
+ * Takes over the access callback for user profiles.
+ */
+function ulf_hjoerring_settings_menu_alter(&$items) {
+  $items['user/%user']['access callback'] = 'ulf_hjoerring_settings_access';
+}
+
+/**
+ * Access callback for user profiles.
+ */
+function ulf_hjoerring_settings_access($account = NULL) {
+  global $user;
+  if (!isset($account)) {
+    $account = $user;
+  }
+
+  if(in_array('company', $account->roles)) {
+    return TRUE;
+  } else {
+    return user_view_access($account);
+  }
+}
+
+/**
  * Implements hook_user_presave().
  */
 function ulf_hjoerring_settings_user_presave(&$edit, $account, $category)
