@@ -31,11 +31,28 @@ function ulf_hjoerring_settings_update_7002 () {
     ->fetchCol();
 
   foreach ($types as $type) {
-    db_insert('captcha_points')
-      ->fields(array(
-        'form_id' => $type.'_entityform_edit_form',
-        'captcha_type' => 'default',
-      ))
-      ->execute();
+    try {
+      db_insert('captcha_points')
+        ->fields(array(
+          'form_id' => $type.'_entityform_edit_form',
+          'captcha_type' => 'default',
+        ))
+        ->execute();
+    } catch (Exception $e) {
+      //if they are already added, the query will fail
+      //we do nothing
+    }
   }
+}
+
+/**
+ * Implements hook_update_N().
+ */
+function ulf_hjoerring_settings_update_7003(&$sandbox)
+{
+  $module_enable = array(
+    'sharedemail',
+  );
+  module_enable($module_enable);
+  cache_clear_all();
 }
