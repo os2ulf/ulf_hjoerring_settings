@@ -2238,7 +2238,7 @@ At opnå kendskab til...
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 16,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2292,7 +2292,7 @@ At opnå kendskab til...
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 11,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2340,7 +2340,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2401,7 +2401,7 @@ At opnå kendskab til...
           'thousand_separator' => ' ',
         ),
         'type' => 'number_decimal',
-        'weight' => 27,
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2449,7 +2449,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 28,
+        'weight' => 16,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2500,7 +2500,7 @@ At opnå kendskab til...
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 15,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2550,7 +2550,7 @@ At opnå kendskab til...
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 7,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2575,6 +2575,57 @@ At opnå kendskab til...
     ),
   );
 
+  // Exported field_instance: 'node-internship-field_educational_path'.
+  $field_instances['node-internship-field_educational_path'] = array(
+    'bundle' => 'internship',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 37,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 26,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_educational_path',
+    'label' => 'Uddannelsesvej',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_truncate_html' => 0,
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 9,
+    ),
+  );
+
   // Exported field_instance: 'node-internship-field_facilities'.
   $field_instances['node-internship-field_facilities'] = array(
     'bundle' => 'internship',
@@ -2594,7 +2645,7 @@ At opnå kendskab til...
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 21,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2638,7 +2689,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 22,
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2692,7 +2743,7 @@ At opnå kendskab til...
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 30,
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2904,7 +2955,7 @@ At opnå kendskab til...
           'show_remaining_days' => 0,
         ),
         'type' => 'date_default',
-        'weight' => 34,
+        'weight' => 22,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2958,7 +3009,7 @@ At opnå kendskab til...
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 39,
+        'weight' => 29,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3014,7 +3065,7 @@ At opnå kendskab til...
           'view_mode' => 'default',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 31,
+        'weight' => 19,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3062,7 +3113,7 @@ At opnå kendskab til...
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 45,
+        'weight' => 34,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3108,7 +3159,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 24,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3216,7 +3267,7 @@ At opnå kendskab til...
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
-        'weight' => 37,
+        'weight' => 25,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3258,7 +3309,7 @@ At opnå kendskab til...
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 44,
+        'weight' => 33,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3305,7 +3356,7 @@ At opnå kendskab til...
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 42,
+        'weight' => 31,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3349,7 +3400,7 @@ At opnå kendskab til...
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 43,
+        'weight' => 32,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3399,7 +3450,7 @@ At opnå kendskab til...
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 38,
+        'weight' => 28,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3447,7 +3498,7 @@ At opnå kendskab til...
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 27,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3493,7 +3544,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 29,
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3605,7 +3656,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 35,
+        'weight' => 23,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3656,7 +3707,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 32,
+        'weight' => 20,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3678,7 +3729,7 @@ At opnå kendskab til...
       'module' => 'html5_tools',
       'settings' => array(),
       'type' => 'emailwidget',
-      'weight' => 26,
+      'weight' => 27,
     ),
   );
 
@@ -3705,7 +3756,7 @@ At opnå kendskab til...
           'custom_title' => '',
         ),
         'type' => 'link_default',
-        'weight' => 33,
+        'weight' => 21,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3770,7 +3821,7 @@ At opnå kendskab til...
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 36,
+        'weight' => 24,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3792,7 +3843,7 @@ At opnå kendskab til...
       'module' => 'html5_tools',
       'settings' => array(),
       'type' => 'telwidget',
-      'weight' => 27,
+      'weight' => 28,
     ),
   );
 
@@ -3817,7 +3868,7 @@ At opnå kendskab til...
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 40,
+        'weight' => 30,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3871,7 +3922,7 @@ At opnå kendskab til...
           'video_style' => 'normal',
         ),
         'type' => 'video_embed_field',
-        'weight' => 25,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4134,6 +4185,7 @@ At opnå kendskab til...
   t('Tilmeldingsfrist');
   t('Tlf.nr.');
   t('Trashed');
+  t('Uddannelsesvej');
   t('Upload et billede/illustration');
   t('Varighed');
   t('Vedligehold event i pretix');
