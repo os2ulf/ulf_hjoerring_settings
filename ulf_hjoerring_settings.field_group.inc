@@ -116,7 +116,6 @@ function ulf_hjoerring_settings_field_group_info() {
       0 => 'field_activities',
       1 => 'field_background_knowledge',
       2 => 'field_post_work',
-      3 => 'field_material_suggestions',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -374,7 +373,6 @@ function ulf_hjoerring_settings_field_group_info() {
     'weight' => '8',
     'children' => array(
       0 => 'field_educational_material',
-      1 => 'field_inspirational_material',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -590,7 +588,7 @@ function ulf_hjoerring_settings_field_group_info() {
     'children' => array(
       0 => 'field_count',
       1 => 'field_count_description',
-      2 => 'field_educational_goals',
+      2 => 'field_educational_path',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

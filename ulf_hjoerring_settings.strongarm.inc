@@ -137,6 +137,9 @@ function ulf_hjoerring_settings_strongarm() {
         'redirect' => array(
           'weight' => '10',
         ),
+        'metatags' => array(
+          'weight' => '40',
+        ),
       ),
       'display' => array(),
     ),
