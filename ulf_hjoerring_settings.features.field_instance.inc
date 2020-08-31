@@ -824,6 +824,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
+          'custom_date_format' => '',
           'format_type' => 'ulf_default',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -838,6 +839,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
+          'custom_date_format' => '',
           'format_type' => 'ulf_default',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -1041,6 +1043,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
+          'custom_date_format' => '',
           'format_type' => 'ulf_default',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -1055,6 +1058,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
+          'custom_date_format' => '',
           'format_type' => 'ulf_default',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -1069,6 +1073,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
+          'custom_date_format' => '',
           'format_type' => 'ulf_default',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -2933,6 +2938,7 @@ At opnå kendskab til...
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
+          'custom_date_format' => '',
           'format_type' => 'ulf_default',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -2947,6 +2953,7 @@ At opnå kendskab til...
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
+          'custom_date_format' => '',
           'format_type' => 'ulf_default',
           'fromto' => 'both',
           'multiple_from' => '',
