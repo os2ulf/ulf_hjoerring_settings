@@ -621,7 +621,7 @@ function ulf_hjoerring_settings_field_group_info() {
       3 => 'field_pretix_show_widget_from',
       4 => 'field_pretix_synchronize',
       5 => 'field_pretix_widget',
-      6 => 'field_pretix_url',
+      6 => 'field_pretix_event_url',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -655,7 +655,7 @@ function ulf_hjoerring_settings_field_group_info() {
       3 => 'field_pretix_date',
       4 => 'field_pretix_email_recipient',
       5 => 'field_pretix_widget',
-      6 => 'field_pretix_url',
+      6 => 'field_pretix_event_url',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
