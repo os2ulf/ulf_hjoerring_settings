@@ -343,7 +343,6 @@ function ulf_hjoerring_settings_field_group_info() {
     'weight' => '9',
     'children' => array(
       0 => 'field_educational_material',
-      1 => 'field_inspirational_material',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -554,10 +553,9 @@ function ulf_hjoerring_settings_field_group_info() {
     'children' => array(
       0 => 'field_count',
       1 => 'field_count_description',
-      2 => 'field_educational_goals',
-      3 => 'field_subjects_primary_school',
-      4 => 'field_target_group_sub',
-      5 => 'field_competencies',
+      2 => 'field_subjects_primary_school',
+      3 => 'field_target_group_sub',
+      4 => 'field_competencies',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -623,6 +621,7 @@ function ulf_hjoerring_settings_field_group_info() {
       3 => 'field_pretix_show_widget_from',
       4 => 'field_pretix_synchronize',
       5 => 'field_pretix_widget',
+      6 => 'field_pretix_url',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -656,6 +655,7 @@ function ulf_hjoerring_settings_field_group_info() {
       3 => 'field_pretix_date',
       4 => 'field_pretix_email_recipient',
       5 => 'field_pretix_widget',
+      6 => 'field_pretix_url',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

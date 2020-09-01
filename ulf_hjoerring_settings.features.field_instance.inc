@@ -1363,7 +1363,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 18,
+      'weight' => 19,
     ),
   );
 
@@ -1406,7 +1406,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
       'module' => 'html5_tools',
       'settings' => array(),
       'type' => 'emailwidget',
-      'weight' => 19,
+      'weight' => 20,
     ),
   );
 
@@ -1552,6 +1552,49 @@ function ulf_hjoerring_settings_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-education-field_pretix_url'.
+  $field_instances['node-education-field_pretix_url'] = array(
+    'bundle' => 'education',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 43,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pretix_url',
+    'label' => 'Pretix url',
+    'required' => FALSE,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'html5_tools',
+      'settings' => array(),
+      'type' => 'urlwidget',
+      'weight' => 18,
+    ),
+  );
+
   // Exported field_instance: 'node-education-field_pretix_widget'.
   $field_instances['node-education-field_pretix_widget'] = array(
     'bundle' => 'education',
@@ -1596,7 +1639,7 @@ function ulf_hjoerring_settings_field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 20,
+      'weight' => 21,
     ),
   );
 
@@ -3295,7 +3338,7 @@ At opnå kendskab til...
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 55,
+      'weight' => 56,
     ),
   );
 
@@ -3338,7 +3381,7 @@ At opnå kendskab til...
       'module' => 'html5_tools',
       'settings' => array(),
       'type' => 'emailwidget',
-      'weight' => 56,
+      'weight' => 57,
     ),
   );
 
@@ -3484,6 +3527,50 @@ At opnå kendskab til...
     ),
   );
 
+  // Exported field_instance: 'node-internship-field_pretix_url'.
+  $field_instances['node-internship-field_pretix_url'] = array(
+    'bundle' => 'internship',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 38,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pretix_url',
+    'label' => 'pretix url',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'html5_tools',
+      'settings' => array(),
+      'type' => 'urlwidget',
+      'weight' => 55,
+    ),
+  );
+
   // Exported field_instance: 'node-internship-field_pretix_widget'.
   $field_instances['node-internship-field_pretix_widget'] = array(
     'bundle' => 'internship',
@@ -3528,7 +3615,7 @@ At opnå kendskab til...
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 57,
+      'weight' => 58,
     ),
   );
 
@@ -4182,6 +4269,7 @@ At opnå kendskab til...
   t('Periode');
   t('Postnummer');
   t('Pretix Widget');
+  t('Pretix url');
   t('Pris');
   t('Show pretix widget from another course.');
   t('Show widget from');
@@ -4202,6 +4290,7 @@ At opnå kendskab til...
   t('Vælg indstilling for visning af kontaktformular i kontaktboks');
   t('Yderligere oplysninger til faciliteter');
   t('Yderligere oplysninger til periode');
+  t('pretix url');
 
   return $field_instances;
 }
