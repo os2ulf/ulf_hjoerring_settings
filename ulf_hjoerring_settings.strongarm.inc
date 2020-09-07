@@ -92,6 +92,9 @@ function ulf_hjoerring_settings_strongarm() {
         'redirect' => array(
           'weight' => '11',
         ),
+        'metatags' => array(
+          'weight' => '40',
+        ),
       ),
       'display' => array(),
     ),
