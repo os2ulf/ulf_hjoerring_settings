@@ -3806,7 +3806,7 @@ At opnå kendskab til...
       'module' => 'html5_tools',
       'settings' => array(),
       'type' => 'emailwidget',
-      'weight' => 27,
+      'weight' => 26,
     ),
   );
 
@@ -3920,6 +3920,50 @@ At opnå kendskab til...
       'module' => 'html5_tools',
       'settings' => array(),
       'type' => 'telwidget',
+      'weight' => 27,
+    ),
+  );
+
+  // Exported field_instance: 'node-internship-field_signup_show_link'.
+  $field_instances['node-internship-field_signup_show_link'] = array(
+    'bundle' => 'internship',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 36,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_signup_show_link',
+    'label' => 'Show signup link',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+      ),
+      'type' => 'options_onoff',
       'weight' => 28,
     ),
   );
@@ -4255,6 +4299,7 @@ At opnå kendskab til...
   t('Pretix event url');
   t('Pris');
   t('Show pretix widget from another course.');
+  t('Show signup link');
   t('Show widget from');
   t('Skriv ikke jeres faste fysiske adresse her, den har vi allerede. Anvend dette felt til ekstraoplysninger om forløbets sted: Eks. \'Store Sal\', \'Brug højre indgang - ring på dørklokken\' eller en alternativ adresse end jeres faste fysiske adresse.');
   t('Sted (ekstraoplysninger): Eks. \'Store Sal\', \'Brug højre indgang - ring på dørklokken\' ');

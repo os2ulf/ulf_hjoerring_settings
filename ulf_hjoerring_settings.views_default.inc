@@ -55,7 +55,7 @@ function ulf_hjoerring_settings_views_default_views() {
   $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['content'] = '<h3 class="teaser--content-header">Internships</h3>';
-  /* Forbindelse: Handler mangler eller er i stykker */
+  /* Forbindelse: field_target_group (field_target_group) */
   $handler->display->display_options['relationships']['field_target_group_tid']['id'] = 'field_target_group_tid';
   $handler->display->display_options['relationships']['field_target_group_tid']['table'] = 'field_data_field_target_group';
   $handler->display->display_options['relationships']['field_target_group_tid']['field'] = 'field_target_group_tid';
@@ -247,7 +247,7 @@ function ulf_hjoerring_settings_views_default_views() {
     t('Stigende'),
     t('Faldende'),
     t('<h3 class="teaser--content-header">Internships</h3>'),
-    t('field_target_group_tid'),
+    t('term fra field_target_group'),
     t('Alle'),
     t('Kursus'),
     t('<h3 class="teaser--content-header">Kursus</h3>'),

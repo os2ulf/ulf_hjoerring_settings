@@ -721,6 +721,7 @@ function ulf_hjoerring_settings_field_group_info() {
       2 => 'field_signup_link',
       3 => 'field_signup_email',
       4 => 'field_signup_phone',
+      5 => 'field_signup_show_link',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
