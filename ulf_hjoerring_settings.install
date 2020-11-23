@@ -61,7 +61,6 @@ function ulf_hjoerring_settings_update_7003(&$sandbox)
  * Automatically set signup link.
  */
 function ulf_hjoerring_settings_update_7004(&$sandbox) {
-  error_log('Start');
   $query = db_select('node', 'n');
   $query->fields('n',['nid'])
     ->condition('n.type', 'internship')
@@ -70,14 +69,10 @@ function ulf_hjoerring_settings_update_7004(&$sandbox) {
   $result = $query->execute()->fetchAllKeyed(0,0);
 
   if (isset($result)) {
-    error_log('Start loading nodes');
     $nodes = node_load_multiple($result);
-    error_log('Finished loading nodes');
     foreach ($nodes as $node) {
       $node->field_signup_show_link[LANGUAGE_NONE][0]['value'] = 1;
       node_save($node);
-      error_log('Finished saving');
     }
   }
-  error_log('Finished');
 }
