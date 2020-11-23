@@ -3079,11 +3079,7 @@ At opnå kendskab til...
   // Exported field_instance: 'node-internship-field_message_form'.
   $field_instances['node-internship-field_message_form'] = array(
     'bundle' => 'internship',
-    'default_value' => array(
-      0 => array(
-        'target_id' => 1,
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Vælg indstilling for visning af kontaktformular i kontaktboks',
     'display' => array(
